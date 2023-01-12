@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.todo::before {
+  content: '';
+  font-size: 20px;
+  padding-right: 10px;
+}
+.parent {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr ;
+
+}
+.child3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  padding: 12px 16px;
+  transform: translate(0%, -50%);
+}
+
+.close:hover {
+  background: #bbb;
+}
